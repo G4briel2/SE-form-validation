@@ -38,3 +38,9 @@ button{
 button:hover {
     background-color: #00bfa5;
 }
+
+#mensagem{
+    margin-top: 10px;
+    color: #ff5252;
+    font-weight: bold;
+}
