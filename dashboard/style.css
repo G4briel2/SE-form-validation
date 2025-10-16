@@ -1,0 +1,34 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.rainbow{
+    background: linear-gradient(90deg, #ff0044 0%, #ffa500 20%, #ffff00 40%, #00ff66 60%, #00aaff 80%, #7a00ff 100%);
+    animation: rainbow 1s linear infinite;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 3rem;
+    
+    height: 6rem;
+    padding: 0 2rem;
+
+    box-shadow: 0 0 100px #ff0000;
+}
+
+@keyframes rainbow {
+    from { filter: hue-rotate(0deg); }
+    to   { filter: hue-rotate(360deg); }
+}
+
+h1#welcome{
+    color: #121212;
+}
