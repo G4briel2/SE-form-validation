@@ -17,7 +17,7 @@ form.addEventListener("submit", (e) => {
         mensagem.style.color = "#03dac6";
         mensagem.textContent = "Login realizado com sucesso!";
         localStorage.setItem("usuarioLogado", usuario.value);
-        window.location.href = "./dashboard/dashboard.html";
+        window.location.href = "../dashboard/dashboard.html";
     } else {
         mensagem.textContent = "Usuário ou senha incorreta.";
     }
