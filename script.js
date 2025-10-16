@@ -8,11 +8,16 @@ form.addEventListener("submit", (e) => {
 
     if(usuario.value === "" || senha.value === ""){
         mensagem.textContent = "Preencha todos os campos!";
-    } else if (usuario.value === "adm" && senha.value === "123") {
+        return;
+    }
+
+    const dadosSalvos = JSON.parse(localStorage.getItem("cadastro"));
+
+    if (dadosSalvos && usuario.value === dadosSalvos.usuario && senha.value === dadosSalvos.senha) {
         mensagem.style.color = "#03dac6";
         mensagem.textContent = "Login realizado com sucesso!";
-        localStorage.setItem("usuario", usuario.value);
-        window.location.href = "./dashboard/dashboard.html"
+        localStorage.setItem("usuarioLogado", usuario.value);
+        window.location.href = "./dashboard/dashboard.html";
     } else {
         mensagem.textContent = "Usuário ou senha incorreta.";
     }
