@@ -17,28 +17,28 @@ body{
 
 .login-container{
     background-color: #1f1f1f;
-    padding: 30px;
-    border-radius: 30px;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
-    width: 300px;
+    padding: 3rem;
+    border-radius: 3rem;
+    box-shadow: 0 0 1.5rem rgba(255, 255, 255, 0.1);
+    width: 30rem;
 
     input{
         width: 100%;
-        margin-bottom: 20px;
-        padding: 10px;
+        margin-bottom: 2rem;
+        padding: 1rem;
         border: none;
-        border-radius: 5px;
+        border-radius: .5rem;
     }
     
     input:nth-child(1){
-        margin-top: 20px;
+        margin-top: 2rem;
     }
 
     .termsCheck{
         display: inline-flex;
-        gap: 10px;
+        gap: 1rem;
 
-        margin-bottom: 20px;
+        margin-bottom: 2rem;
 
         input{
             margin: 0;
@@ -52,11 +52,11 @@ body{
 
 button{
     width: 100%;
-    padding: 10px;
+    padding: 1rem;
     background-color: #03dac6;
     color: #000;
     border: none;
-    border-radius: 5px;
+    border-radius: .5rem;
     font-weight: bold;
     cursor: pointer;
 }
@@ -66,7 +66,7 @@ button:hover {
 }
 
 #mensagem{
-    margin-top: 10px;
+    margin-top: 1rem;
     color: #ff5252;
     font-weight: bold;
 }

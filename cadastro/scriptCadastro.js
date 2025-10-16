@@ -22,7 +22,7 @@ form.addEventListener("submit", (e) => {
 
         localStorage.setItem("cadastro", JSON.stringify(dados));
  
-        window.location.href = "../index.html";
+        window.location.href = "../login/login.html";
     }
 
 });
