@@ -2,6 +2,17 @@
     font-size: 62.5%;
 }
 
+@font-face {
+    font-family: 'vt323';
+    src: url('./assets/fonts/VT323-Regular.ttf') format('.ttf');
+}
+
+@font-face {
+    font-family: 'Aurebesh';
+    src: url('./assets//fonts/Aurebesh.otf');
+}
+
+
 *{
     margin: 0;
     padding: 0;
