@@ -1,46 +1,273 @@
 body{
-    font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: #fff;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    background-color: #141414;
     height: 100vh;
 }
 
-.login-container{
-    background-color: #1f1f1f;
-    padding: 3rem;
-    border-radius: 3rem;
-    box-shadow: 0 0 1.5rem rgba(255, 255, 255, 0.1);
-    width: 30rem;
+@media screen {
+    
+}
 
-    input{
+.container-container{
+    transition: transform 0.2s ease;
+
+    cursor: url("../assets/cursor.svg"), auto;
+    
+    position: relative;
+
+    background-color: #181A1C;
+    border: 1px solid #30343A;
+
+    min-width:  60.4rem;
+    min-height: 59.8rem;
+
+    border-radius: 5.6rem;
+
+    box-shadow: 15px 15px 30px #0F1010;
+
+    img{
+        position: absolute;
+        top: 3rem;
+        left: 0.7rem;
+        z-index: 1;
+
+        width: 58.7rem;
+
+        z-index: 0 !important;
+    }
+
+    *{
+        z-index: 1;
+    }
+
+    .input-wrap{
+        position: absolute;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        
+    }
+
+    .greenCursor{
+        cursor: url("../assets/cursorText.svg"), auto;
+    }
+
+    .blueCursor{
+        cursor: url("../assets/blueCursorText.svg"), auto;
+    }
+
+    label{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .input-wrap:nth-child(1){
+        width: 28.4rem;
+
+        left: 3.7rem;
+        top: 14.7rem;
+        
+    }
+    
+    label.userIDnumber{
+        font-family: 'vt323';
+        font-size: 24px;
+        color: #ffffff;
+        white-space: nowrap;
+
+        padding: 1.4rem 0 1.1rem 1rem;
+    }
+
+    input#userIDnumber{
+        padding: 1.4rem 1rem 1.1rem 1rem;
+
         width: 100%;
-        margin: 1rem 0;
-        padding: 1rem;
         border: none;
-        border-radius: .5rem;
-    }   
+
+        outline: none;
+
+        font-family: 'vt323';
+        color: #00ff00;
+
+        
+        background-color: transparent;
+
+        font-size: 24px;
+    }
+
+    input#userIDnumber::placeholder{
+        font-size: 20px;
+        color: #2e2e2e;
+    }
+
+    .input-wrap:nth-child(2){
+        width: 25.1rem;
+        height: 2rem;
+        
+        left: 7rem;
+        top: 19.6rem;
+    }
+
+    label.userKey{
+        font-family: 'vt323';
+        font-size: 18px;
+        color: #ffffff;
+        white-space: nowrap;
+
+        padding-left: 1rem;
+
+        height: 100%;
+    }
+
+    input#userKey{
+
+        width: 100%;
+        height: 3rem;
+        border: none;
+
+        outline: none;
+
+        padding: 0 1rem 0 0.6rem;
+
+        font-family: 'vt323';
+        color: #00ff00;
+        background-color: transparent;
+        font-size: 18px;
+
+    }
+
+    input#userKey::placeholder{
+        color: #2e2e2e;
+        font-size: 14px;
+        
+    }
+
+    .input-wrap:nth-child(3){
+        align-items: flex-start;
+
+        width: 28.5rem;
+        height: 5.2rem;
+
+        left: 3.7rem;
+        top: 21.6rem;
+    }
+
+    label.dnaHash{
+        height: 100%;
+        font-family: 'vt323';
+        font-size: 24px;
+        color: #ffffff;
+        white-space: nowrap;
+
+        padding-left: 1rem;
+    }
+
+    input#dnaHash{
+
+        width: 100%;
+        height: 100%;
+        border: none;
+
+        padding: 0 7rem 0 1rem;
+
+        outline: none;
+
+        font-family: 'vt323';
+        color: #00ff00;
+        background-color: transparent;
+        font-size: 24px;
+    }
+
+    input#dnaHash::placeholder{
+        color: #2e2e2e;
+        font-size: 20px;
+    }
+
+    .input-wrap:nth-child(4){
+        width: 18.5rem;
+        height: 3.7rem;
+
+        left: 7.7rem;
+        top: 35.5rem;
+    }
+
+    label.token{
+        height: 100%;
+        font-family: 'vt323';
+        font-size: 18px;
+        white-space: nowrap;
+
+        padding-left: 1rem;
+    }
+
+    input#token{
+
+        width: 7rem;
+        height: 100%;
+        border: none;
+
+        padding: 0 1rem;
+
+        outline: none;
+
+        font-family: 'vt323';
+        color: #fff;
+        background-color: transparent;
+        font-size: 18px;
+    }
+
+    input#token::placeholder{
+        color: #fca523;
+        font-size: 18px;
+    }
+
+    .input-wrap:nth-child(5){
+        flex-direction: column;
+        align-items: flex-start;
+        width: 16.1rem;
+        height: 7.1rem;
+
+        left: 10rem;
+        top: 39.7rem;
+
+    }
+
+    label.passCode{
+        justify-content: flex-start;
+
+        width: 100%;
+        height: 50%;
+        font-family: 'vt323';
+        font-size: 18px;
+        white-space: nowrap;
+
+        padding-left: 1rem;
+    }
+
+    input#passCode{
+
+        width: 16.1rem;
+        height: 100%;
+        border: none;
+
+        padding: 0 4rem 0 1rem;
+
+        outline: none;
+
+        font-family: 'Aurebesh';
+        color: #fff;
+        background-color: transparent;
+        font-size: 24px;
+    }
+
+    input#passCode::placeholder{
+        color: #fca523;
+        font-size: 24px;;
+    }
 }
 
-button{
-    width: 100%;
-    padding: 1rem;
-    background-color: #03dac6;
-    color: #000;
-    border: none;
-    border-radius: .5rem;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #00bfa5;
-}
-
-#mensagem{
-    margin-top: 1rem;
-    color: #ff5252;
-    font-weight: bold;
-}

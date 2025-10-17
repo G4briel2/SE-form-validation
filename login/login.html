@@ -3,19 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de Login</title>
+    <title>ⱠØ₲ł₦</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../global.css">
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <div class="login-container">
-        <h1>Login</h1>
-        <form id="loginForm">
-            <input type="text" id="usuario" placeholder="Usuário">
-            <input type="text" id="senha" placeholder="Senha">
-            <button type="submit">Entrar</button>
-            <p id="mensagem"></p>
+    <div class="container-container">
+        
+        <form>
+            <div class="input-wrap greenCursor">
+                <label for="userIDnumber" class="userIDnumber greenCursor">ID:// -</label>
+                <input autocomplete="off" type="text" id="userIDnumber" class="greenCursor" placeholder="Insert here"/>
+            </div>
+            <div class="input-wrap">
+                <label for="userKey" class="userKey greenCursor">keY - </label>
+                <input autocomplete="off" type="text" id="userKey" class="greenCursor" placeholder="Ex: AX9-Δ442-77C-BEON"/>
+            </div>
+            <div class="input-wrap">
+                <label for="dnaHash" class="dnaHash greenCursor">DNA# -</label>
+                <input autocomplete="off" type="text" id="dnaHash" class="greenCursor" placeholder="Ex: 0xA67B…F0"/>
+            </div>
+
+            <div class="input-wrap">
+                <label for="token" class="token blueCursor">Quantum token: </label>
+                <input autocomplete="off" type="text" id="token" class="blueCursor" placeholder="⏣⏣⏣"/>
+            </div>
+
+            <div class="input-wrap">
+                <label for="passCode" class="passCode blueCursor">P@SSC0D3 </label>
+                <input autocomplete="off" type="text" id="passCode" class="blueCursor" placeholder="✖✖✖✖✖"/>
+            </div>
         </form>
+
+        <img draggable="false" src="../assets/container.svg" alt="">
     </div>
     <script src="script.js"></script>
 </body>
