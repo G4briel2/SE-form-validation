@@ -9,8 +9,10 @@
     <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
+    
     <div class="container-container">
-        
+        <div class="errorStrip"></div>
+
         <form>
             <div class="input-wrap greenCursor">
                 <label for="userIDnumber" class="userIDnumber greenCursor">ID:// -</label>
@@ -18,11 +20,11 @@
             </div>
             <div class="input-wrap">
                 <label for="userKey" class="userKey greenCursor">keY - </label>
-                <input autocomplete="off" type="text" id="userKey" class="greenCursor" placeholder="Ex: AX9-Δ442-77C-BEON"/>
+                <input autocomplete="off" type="text" id="userKey" class="greenCursor" placeholder="AX9-Δ442-77C-BEON"/>
             </div>
             <div class="input-wrap">
                 <label for="dnaHash" class="dnaHash greenCursor">DNA# -</label>
-                <input autocomplete="off" type="text" id="dnaHash" class="greenCursor" placeholder="Ex: 0xA67B…F0"/>
+                <input autocomplete="off" type="text" id="dnaHash" class="greenCursor" placeholder="0xA673…90"/>
             </div>
 
             <div class="input-wrap">
@@ -34,10 +36,23 @@
                 <label for="passCode" class="passCode blueCursor">P@SSC0D3 </label>
                 <input autocomplete="off" type="text" id="passCode" class="blueCursor" placeholder="✖✖✖✖✖"/>
             </div>
+
+            <img draggable="false" src="../assets/Button.svg" class="button " id="button">
         </form>
 
         <img draggable="false" src="../assets/container.svg" alt="">
+
+        <div class="errorStrip"></div>
+        <audio id="errorSound" src="../assets/audios/error.mp3" preload="auto"></audio>
     </div>
+    <div class="container-container-container">
+        
+    </div>
+    <div class="blurBg"></div>
+    <div class="accessGranted"></div>
+    <audio id="accessGrantedSound" src="../assets/audios/accessGranted.mp3" preload="auto"></audio>
+    
+
     <script src="script.js"></script>
 </body>
 </html>
