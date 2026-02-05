@@ -112,14 +112,3 @@ button.addEventListener('click', (e) => {
 });
 
 // vvvvvvvvvvvvvvvvvvvvvvv Testes vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-function mult(a, b) {
-  return a * b;
-}
-
-function testarMult(){
-  console.assert(mult(2, 2) === 4, "Teste 1 falhou");
-  console.assert(mult(5, 4) === 20, "Teste 2 falhou");
-  console.assert(mult(1, 1) === 2, "Teste 3 falhou");
-}
-
-testarMult();
