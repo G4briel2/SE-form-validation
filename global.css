@@ -4,12 +4,17 @@
 
 @font-face {
     font-family: 'vt323';
-    src: url('./assets/fonts/VT323-Regular.ttf') format('.ttf');
+    src: url('./assets/fonts/VT323-Regular.ttf');
 }
 
 @font-face {
     font-family: 'Aurebesh';
     src: url('./assets//fonts/Aurebesh.otf');
+}
+
+@font-face {
+    font-family: 'Monofonto';
+    src: url('./assets//fonts/monofonto.otf');
 }
 
 
